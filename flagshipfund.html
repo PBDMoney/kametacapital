@@ -1,0 +1,255 @@
+<!DOCTYPE html>
+<html lang="en">
+<meta charset="UTF-8">
+<title>Kameta Capital</title>
+<meta name="viewport" content="width=device-width,initial-scale=1">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300&display=swap" rel="stylesheet">
+  
+<link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap" rel="stylesheet">
+  
+<style>
+  
+  
+
+body{background: black; background-repeat: no-repeat; height: 100%; background-image:("https://i.imgur.com/ATWOnCL.mp4"); overflow-x: hidden; padding: 0px;}
+
+page-wrap{background: #151514; height: 100%; display: block;}
+
+#section-hero{padding: 200px; padding-top: 5px;padding-left: 6vw; margin-top: 50px; z-index: 2; position: absolute;}
+
+#video{z-index: -2; margin-top: 180px; width: 100vw;
+
+  
+  right: 0;
+  bottom: 0;
+  min-width: 100%; 
+  min-height: 100%;
+}
+
+.center-wrap{display: flex;width: 100%; flex-wrap: wrap; justify-content: center; align-items: center; position: absolute; margin-top: -120px;}
+
+a{text-decoration: none;}
+
+/* ----------- Headers --------------*/
+.header-wrapper{max-width: 800px;}
+
+h1, h2, p{color: white; font-family: inter; text-shadow: black 1px 0 10px;}
+h1{font-weight: bold; font-size: 40px; margin-top: -4px; margin-bottom: -4px;}
+h1{color: #618DF2;}
+p{color: white; font-size: 20px; font-family: 'Roboto', sans-serif; font-style: normal;
+}
+
+
+/* ----------- NAV --------------*/
+
+#nav-logo{background: black; width: 140px;}
+
+nav{display: flex;  align-items: center; background: black; margin: 0px; margin-top: -30px; width: 100vw;}
+
+nav ul {
+  padding: 0;
+  list-style-type: none;
+  flex: 1;
+  display: flex;
+  font-weight: bold; margin-top: 20px;}
+
+nav a{
+  display: block;
+  font-size: 100%;
+  height: 3rem;
+  line-height: 1.7;
+  text-transform: uppercase;
+  text-decoration: none;
+  color: #aaa;}
+
+
+nav li{font-family: 'Inter', sans-serif; margin-left: 40px; margin-top: 30px;}
+
+
+nav li:hover, nav a:hover {
+   color: white; color: #0C8CE4;
+}
+
+#nav-logo2{display: none;}
+
+/* ----------- Scroll --------------*/
+
+/* width */
+::-webkit-scrollbar {
+width: 8px;
+}
+/* Track */
+::-webkit-scrollbar-track {
+background: black;
+ 
+  border-radius: 10px;
+  box-shadow: inset 0 0 10px rgba(0,0,0,0.5);
+}
+/* Handle */
+::-webkit-scrollbar-thumb {
+border-radius: 10px;
+background:white;
+}
+
+/* ----------- Footer --------------*/
+button-disclosure{z-index: 2; color: white; border-radius: 50px; padding: 14px; padding-top: 4px; padding-bottom: 4px; background: black; font-family: 'roboto'; border: 1px solid white;}
+
+#copyright{font-family: 'roboto'; font-weight:bold; text-align: center; margin-top: 0px; background: black; color: white; padding: 20px; margin-bottom: 0px; color: white;}
+
+footer{background: black; height: 100px; margin-top: -10px; padding-top: 20px; width: 100vw; margin-right: -20px;}
+
+.center-wrap2{display: flex;width: 100%; flex-wrap: wrap; justify-content: center; align-items: center; position: relative;}
+
+/* ----------- Disclosure popup --------------*/
+
+/* Popup container - can be anything you want */
+.popup {
+  position: relative;
+  display: inline-block;
+  cursor: pointer;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+
+/* The actual popup */
+.popup .popuptext {
+  visibility: hidden;
+  width: 160px;
+  background-color: #555;
+  color: #fff;
+  text-align: center;
+  border-radius: 6px;
+  padding: 8px 0;
+  position: absolute;
+  z-index: 1;
+  bottom: 125%;
+  left: 50%;
+margin-left: -40vw;
+  width: 80vw;
+}
+
+/* Popup arrow */
+.popup .popuptext::after {
+  content: "";
+  position: absolute;
+  top: 100%;
+  left: 50%;
+  margin-left: -5px;
+  border-width: 5px;
+  border-style: solid;
+  border-color: #555 transparent transparent transparent;
+}
+
+/* Toggle this class - hide and show the popup */
+.popup .show {
+  visibility: visible;
+  -webkit-animation: fadeIn 1s;
+  animation: fadeIn 1s;
+}
+
+/* Add animation (fade in the popup) */
+@-webkit-keyframes fadeIn {
+  from {opacity: 0;} 
+  to {opacity: 1;}
+}
+
+
+
+@keyframes fadeIn {
+  from {opacity: 0;}
+  to {opacity:1 ;}
+}
+
+/* ----------- Screen size --------------*/
+@media(min-width: 1000px){h1{ font-size: 50px;} h2{ font-size: 30px;}
+p{ font-size: 20px;}}
+
+@media(max-width: 1000px){#section-hero{padding: 0px;} button{width: 300px; height: 50px; background: #111417; color: white; border: solid white; border-radius: 10px; font-size: 20px;} #video{height: 100vh;}}
+
+
+
+@media(max-width: 1300px){#section-hero{padding: 0px;margin-top: 20px; padding-left: 40px; width: 70%;} p{font-size: 14px;} h1{margin-bottom: 25px; } #video{object-fit: cover;}}
+@media(max-width: 650px){#video{margin-top: 240px;}}
+@media(max-width: 500px){ #video{margin-top: 240px;} #section-hero{width: 90vw; padding-left: 10px; } p{font-size: 14px;} ::-webkit-scrollbar {width: 0px;}}
+
+@media(max-width: 400px){ #video{margin-top: 240px;} #section-hero{width: 90vw; padding-left: 10px; } h1{font-size: 35px;} p{font-size: 14px;} #video{margin-top: 280px;}
+  
+  
+  
+
+  @media(min-width: 550px){#nav-logo2{display: none;}}
+
+@media(max-width: 550px){
+  ::-webkit-scrollbar{display: none;}
+  body{margin: 0px;}
+  center-top{display: flex; justify-content: center; margin-top: -30px; width: 100vw; background: black;}
+
+  #nav-logo{display: none;}  
+  #nav-logo2{width: 120px; margin: 0px; display: block;}
+  
+  nav {
+  overflow: auto;
+  overflow-y: hidden;
+  white-space: nowrap;
+  width: 100vw; margin-top: -30px; height: 50px; padding-bottom: 10px; padding-top: 0px;}
+  
+  nav ul{margin-top: 50px;}
+  
+ nav > ul > li >a{ 
+  color: white;
+  display: inline-block;
+  text-align: center;
+  padding: 14px;
+   line-height: 0.2;}}
+  
+
+  
+</style>
+<script src=""></script>
+<body>
+  
+<center-top><img src="https://cdn.shopify.com/s/files/1/0621/0637/0260/files/Kameda_no_background.png?v=1665267772" id="nav-logo2"> </center-top>
+  
+  <nav>
+    <img src="https://cdn.shopify.com/s/files/1/0621/0637/0260/files/Kameda_no_background.png?v=1665267772" id="nav-logo">
+    <ul>
+      <li> <a href="index.html">Home </a></li>
+      <li> <a href="portfolios.html"> Portfolios </a></li>
+      <li> <a href="aboutpage.html"> About </a></li>
+      <li> <a href="contactpage.html"> Contact </a></li>
+      </ul>
+    </nav>
+  
+  <page-wrap>
+  <section id="section-hero">
+ 
+ <div class="header-wrapper">
+   <h1> Flagship Fund</h1>
+   <p> Kameta Capital Flagship Fund is operated through the use of 3 proprietary strategies which are assigned different weightings within our portfolio and rebalanced in real time to optimize for potential returns in changing market conditions. Our primary advantage comes from the ability to target niche areas of the market that are not focused on by larger algo reliant funds. Due to liquidity issues with some of our more profitable positions, we are very specific about the amount of capital we manage. As our AUM continue to grow, we have also implemented a macro based strategy for the excess capital. 
+
+While Kameta Capital only shares extensive investment strategy details with our investors and partners, we can publicly reveal our macro view. 
+Kameta Capital’s 2022 macro view is bearish. Our positions and strategies reflect this view.  </h>
+   </div>
+  </section>
+    <img src="https://64.media.tumblr.com/97a4f126c2ce0db4ec8913fab974bd0a/tumblr_nhrlfgvBrQ1shpedgo3_r1_500.gifv" id="video">
+
+  <footer>
+  <div class="center-wrap2">
+ <button-disclosure class="popup" onclick="myFunction()"> DISCLOSURE <span class="popuptext" id="myPopup"> Any opinions in the above are Kameta Capital's views only. None of the above is investment advice, a recommendation or an offer to sell or a solicitation of an offer to buy any securities relating to Kameta Capital. “Kameta Capital,” “we,” “us” and “our” refer to a collective strategy developed by Daniel Kamen, the founder and CEO of Kameta Capital and used in connection with The Flagship Fund. The Kameta Capital Flagship Fund is currently not open to new investors.
+</span> </button-disclosure> </div>
+  
+ 
+<div class="center-wrap2">  <p id="copyright"> COPYRIGHT © 2022 KAMETA CAPITAL. ALL RIGHTS RESERVED. </p></div> </footer>
+</page-wrap>
+
+   <script>
+// When the user clicks on div, open the popup
+function myFunction() {
+  var popup = document.getElementById("myPopup");
+  popup.classList.toggle("show");
+}
+</script>
+</body>
+</html>

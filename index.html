@@ -1,0 +1,270 @@
+<!DOCTYPE html>
+<html lang="en">
+<meta charset="UTF-8">
+<title>Kameta Capital</title>
+<meta name="viewport" content="width=device-width,initial-scale=1">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap" rel="stylesheet">
+  
+<style>
+
+
+
+body{background: black; background: linear-gradient(black, black, #1A1B1A); margin: 0px; background-repeat: no-repeat; height: 100vh; background-image:("https://i.imgur.com/ATWOnCL.mp4"); overflow-x: hidden;}
+
+#section-hero{padding: 200px; padding-top: 5px;}
+
+#video{position: absolute; z-index: -2; margin-top: 0px; width: 100vw; object-fit: cover;
+ 
+
+  position: fixed;
+  right: 0;
+  bottom: 0;
+  min-width: 100%; 
+  min-height: 100%;
+}
+
+
+/* ----------- Headers --------------*/
+.header-wrapper{padding-left: 10vw; max-width: 800px;}
+
+h1, h2, h3{color: white; font-family: inter; text-shadow: black 1px 0 10px; transition: all 0.4s;}
+h1{font-weight: bold; font-size: 40px; margin-top: -4px; margin-bottom: -4px;}
+h2{color: #618DF2;}
+h3{color: #36FFC2;}
+
+
+/* ----------- Buttons --------------*/
+.button-wrapper{display: flex; justify-content: center; gap: 60px; padding-top: 40px;}
+
+button{width: 400px; height: 100px; background: #111417; color: white; border: solid white; border-radius: 10px; font-size: 36px; transition: all 0.3s;}
+
+button:hover{cursor: pointer;}
+
+#btn-invest{border: solid #0C8CE4;}
+#btn-invest:hover{background: #0C8CE4;}
+
+#btn-portfolios{}
+#btn-portfolios:hover{background: white; color: black;}
+
+
+
+button-disclosure{z-index: 2; color: white; border-radius: 50px; padding: 14px; padding-top: 4px; padding-bottom: 4px; background: black; font-family: 'roboto'; border: 1px solid white;}
+
+#copyright{font-family: 'roboto'; font-weight:bold; text-align: center; margin-top: 0px; background: black; color: white; padding: 20px; margin-bottom: 0px; color: white;}
+
+footer{background: black; height: 100px; margin-top: 140px; padding-top: 20px; width: 100vw; margin-right: -20px;}
+
+.center-wrap2{display: flex;width: 100%; flex-wrap: wrap; justify-content: center; align-items: center; position: relative;}
+
+
+
+.center-wrap{display: flex; width: 100%; flex-wrap: wrap; justify-content: center; align-items: center; position: absolute; margin-top: 190px; margin-bottom: 90px; padding-bottom: 60px;}
+
+/* ----------- NAV --------------*/
+
+#nav-logo{background: black; width: 140px;}
+
+nav{display: flex;  align-items: center; background: black; margin-top: -30px;}
+
+nav ul {
+  padding: 0;
+  list-style-type: none;
+  flex: 1;
+  display: flex;
+  font-weight: bold; margin-top: 20px;}
+
+nav a{
+  display: block;
+  font-size: 100%;
+  height: 3rem;
+  line-height: 1.7;
+  text-transform: uppercase;
+  text-decoration: none;
+  color: #aaa;}
+
+
+nav li {font-family: 'Inter', sans-serif; margin-left: 40px; margin-top: 30px;}
+
+
+nav li:hover, nav a:hover {
+   color: white; color: #0C8CE4;
+}
+
+/* ----------- Scroll --------------*/
+
+/* width */
+::-webkit-scrollbar {
+width: 8px;
+}
+/* Track */
+::-webkit-scrollbar-track {
+background: black;
+ 
+  border-radius: 10px;
+  box-shadow: inset 0 0 10px rgba(0,0,0,0.5);
+}
+/* Handle */
+::-webkit-scrollbar-thumb {
+border-radius: 10px;
+background:white;
+}
+
+
+/* ----------- Disclosure popup --------------*/
+
+/* Popup container - can be anything you want */
+.popup {
+  position: relative;
+  display: inline-block;
+  cursor: pointer;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+
+/* The actual popup */
+.popup .popuptext {
+  visibility: hidden;
+  width: 160px;
+  background-color: #555;
+  color: #fff;
+  text-align: center;
+  border-radius: 6px;
+  padding: 8px 0;
+  position: absolute;
+  z-index: 1;
+  bottom: 125%;
+  left: 50%;
+margin-left: -40vw;
+  width: 80vw;
+}
+
+/* Popup arrow */
+.popup .popuptext::after {
+  content: "";
+  position: absolute;
+  top: 100%;
+  left: 50%;
+  margin-left: -5px;
+  border-width: 5px;
+  border-style: solid;
+  border-color: #555 transparent transparent transparent;
+}
+
+/* Toggle this class - hide and show the popup */
+.popup .show {
+  visibility: visible;
+  -webkit-animation: fadeIn 1s;
+  animation: fadeIn 1s;
+}
+
+/* Add animation (fade in the popup) */
+@-webkit-keyframes fadeIn {
+  from {opacity: 0;} 
+  to {opacity: 1;}
+}
+
+
+
+@keyframes fadeIn {
+  from {opacity: 0;}
+  to {opacity:1 ;}
+}
+
+
+/* ----------- Screen size --------------*/
+@media(min-width: 1000px){h1{ font-size: 50px;} h2{ font-size: 30px;}h3{ font-size: 30px;}}
+
+@media(max-width: 1000px){#section-hero{padding: 0px;} button{width: 300px; height: 50px; background: #111417; color: white; border: solid white; border-radius: 10px; font-size: 20px;} #video{height: 100vh;}}
+
+
+
+@media(max-width: 1300px){#section-hero{padding: 0px;}}
+@media(max-width: 670px){.button-wrapper{gap: 20px; padding-top: 40px; flex-direction: column; align-items: center; margin-bottom: 200px;} h1{font-size: 30px;}}
+
+@media(max-width: 470px){.button-wrapper{gap: 20px; padding-top: 40px; flex-direction: column; align-items: center; margin-bottom: 200px;} h1{font-size: 25px;} h2{font-size: 20px;} h3{font-size: 18px;} .header-wrapper{padding-left: 4px;} button{width: 280px;} .header-wrapper{padding-left: 15px;}}
+
+@media(max-width: 270px){.button-wrapper{gap: 20px; padding-top: 40px; flex-direction: column; align-items: center; margin-bottom: 200px;} h1{font-size: 19px;} h2{font-size: 16px;} h3{font-size: 15px;} .header-wrapper{padding-left: 4px;} button{width: 220px;}}
+
+@media (min-width: 670px){#nav-logo2{display: none;}}
+
+@media (max-width: 670px){
+  ::-webkit-scrollbar {display: none;}
+  body{margin: 0px;}
+  center-top{display: flex; justify-content: center; margin-top: -30px; width: 100vw; background: black;}
+
+  #nav-logo{display: none;}  
+  #nav-logo2{width: 120px; margin: 0px;}
+  
+  nav {
+  overflow: auto;
+  overflow-y: hidden;
+  white-space: nowrap;
+  width: 100vw; margin-top: -30px; height: 50px; padding-bottom: 10px; padding-top: 0px;}
+  
+  nav ul {margin-top: 50px;}
+  
+ nav > ul > li >a{ 
+  color: white;
+  display: inline-block;
+  text-align: center;
+  padding: 14px;
+   line-height: 0.2;}}
+</style>
+<script src=""></script>
+<body>
+
+  <center-top><img src="https://cdn.shopify.com/s/files/1/0621/0637/0260/files/Kameda_no_background.png?v=1665267772" id="nav-logo2"> </center-top>
+ <center-wrap> <nav>
+  <img src="https://cdn.shopify.com/s/files/1/0621/0637/0260/files/Kameda_no_background.png?v=1665267772" id="nav-logo"> 
+    <ul>
+      <li> <a href="flagshipfund.html"> Flagship Fund </a></li>
+      <li> <a href="portfolios.html"> Portfolios </a></li>
+      <li> <a href="aboutpage.html"> About </a></li>
+      <li> <a href="contactpage.html"> Contact </a></li>
+      </ul>
+    </nav></center-wrap>
+  
+    <video autoplay muted loop id="video">
+  <source src="https://i.imgur.com/ATWOnCL.mp4" type="video/mp4">
+  Your browser does not support HTML5 video.
+</video>
+  
+  
+  <section id="section-hero">
+ 
+ <div class="header-wrapper">
+ <h2> FOR INVESTORS BY INVESTORS </h2>
+   <h1> Private wealth management for exclusive high net worth individuals</h1>
+   <h3> 40% Annualized Return </h3>
+   </div>
+    
+    <div class="button-wrapper">
+   <a href="flagshipfund.html"><button id="btn-invest"> Flagship Fund </button></a>
+   <a href="portfolios.html"><button id="btn-portfolios"> Portfolios</button> </a>
+      </div>
+    
+   
+  </section>
+  
+<footer>
+  <div class="center-wrap2">
+ <button-disclosure class="popup" onclick="myFunction()"> DISCLOSURE <span class="popuptext" id="myPopup"> Any opinions in the above are Kameta Capital's views only. None of the above is investment advice, a recommendation or an offer to sell or a solicitation of an offer to buy any securities relating to Kameta Capital. “Kameta Capital,” “we,” “us” and “our” refer to a collective strategy developed by Daniel Kamen, the founder and CEO of Kameta Capital and used in connection with The Flagship Fund. The Kameta Capital Flagship Fund is currently not open to new investors.
+</span> </button-disclosure> </div>
+  
+ 
+<div class="center-wrap2">  <p id="copyright"> COPYRIGHT © 2022 KAMETA CAPITAL. ALL RIGHTS RESERVED. </p></div> </footer>
+  <script>
+// When the user clicks on div, open the popup
+function myFunction() {
+  var popup = document.getElementById("myPopup");
+  popup.classList.toggle("show");
+}
+</script>
+
+
+
+</body>
+</html>
