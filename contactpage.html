@@ -1,0 +1,265 @@
+<!DOCTYPE html>
+<html lang="en">
+<meta charset="UTF-8">
+<title>Kameta Capital</title>
+<meta name="viewport" content="width=device-width,initial-scale=1">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300&display=swap" rel="stylesheet">
+  
+  
+<link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap" rel="stylesheet">
+  
+  
+<style>
+  
+  
+
+body{background: black; background: #141414; max-height: 50px; overflow-x: hidden; padding: 0px; margin: 0px;}
+
+#section-hero{padding: 200px; padding-top: 5px; display: flex; justify-content: center; display: flex; flex-direction: row;}
+.header-wrapper{display: flex; flex-direction: column; grid-gap: 30px;}
+
+#section-hero{flex-direction: column; align-items: center; justify-content: center; text-align: center;}
+/* ----------- Headers --------------*/
+h2{padding: 20px; max-width: 800px; background: black; border: 1px solid #618DF2; border-radius: 10px; margin-top: 20px; height: 50px;}
+
+#danny-img{width: 400px; display: block; object-fit: contain;}
+
+h2{color: white; font-family: inter; text-shadow: black 1px 0 10px; transition: all 0.4s; text-align: center;}
+
+h2{font-weight: bold; font-size: 40px; color: #618DF2;  margin-bottom: -4px;  margin-top: 8px;}
+
+p{color: white; font-family: inter; text-shadow: black 1px 0 10px;}
+
+
+/* ----------- NAV --------------*/
+
+#nav-logo{background: black; width: 140px;}
+
+nav{display: flex;  align-items: center; background: black; margin-top: -30px;}
+
+nav ul {
+  padding: 0;
+  list-style-type: none;
+  flex: 1;
+  display: flex;
+  font-weight: bold; margin-top: 20px;}
+
+nav a{
+  display: block;
+  font-size: 100%;
+  height: 3rem;
+  line-height: 1.7;
+  text-transform: uppercase;
+  text-decoration: none;
+  color: #aaa;}
+
+
+nav li {font-family: 'Inter', sans-serif; margin-left: 40px; margin-top: 30px;}
+
+
+nav li:hover, nav a:hover {
+   color: white; color: #0C8CE4;
+}
+
+
+
+
+/* ----------- Scroll --------------*/
+
+/* width */
+::-webkit-scrollbar {
+width: 8px;
+}
+/* Track */
+::-webkit-scrollbar-track {
+background: black;
+ 
+  border-radius: 10px;
+  box-shadow: inset 0 0 10px rgba(0,0,0,0.5);
+}
+/* Handle */
+::-webkit-scrollbar-thumb {
+border-radius: 10px;
+background:white;
+}
+
+
+/* ----------- Disclosure popup --------------*/
+
+/* Popup container - can be anything you want */
+.popup {
+  position: relative;
+  display: inline-block;
+  cursor: pointer;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+
+/* The actual popup */
+.popup .popuptext {
+  visibility: hidden;
+  width: 160px;
+  background-color: #555;
+  color: #fff;
+  text-align: center;
+  border-radius: 6px;
+  padding: 8px 0;
+  position: absolute;
+  z-index: 1;
+  bottom: 125%;
+  left: 50%;
+margin-left: -40vw;
+  width: 80vw;
+}
+
+/* Popup arrow */
+.popup .popuptext::after {
+  content: "";
+  position: absolute;
+  top: 100%;
+  left: 50%;
+  margin-left: -5px;
+  border-width: 5px;
+  border-style: solid;
+  border-color: #555 transparent transparent transparent;
+}
+
+/* Toggle this class - hide and show the popup */
+.popup .show {
+  visibility: visible;
+  -webkit-animation: fadeIn 1s;
+  animation: fadeIn 1s;
+}
+
+/* Add animation (fade in the popup) */
+@-webkit-keyframes fadeIn {
+  from {opacity: 0;} 
+  to {opacity: 1;}
+}
+
+
+
+@keyframes fadeIn {
+  from {opacity: 0;}
+  to {opacity:1 ;}
+}
+
+
+/* ----------- Screen size --------------*/
+
+@media(max-width: 1000px){#section-hero{padding: 0px;} button{width: 300px; height: 50px; background: #111417; color: white; border: solid white; border-radius: 10px; font-size: 20px;} #video{height: 100vh;}}
+
+#section-hero{padding: 10px;}
+
+@media(max-width: 1300px){#section-hero{padding: 10px;}}
+
+@media(max-width: 770px){#section-hero{flex-direction: column; align-items: center;} h1{font-size: 30px;} #danny-img{width: 300px; margin: 0px;}}
+
+@media(max-width: 570px){h2{font-size: 25px; padding: auto; height: 30px;} p{font-size: 12px;} .header-wrapper{padding-left: 15px;}}
+
+@media(max-width: 500px){#section-hero{flex-direction: column; align-items: center;}}
+
+@media(max-width: 270px){.button-wrapper{gap: 20px; padding-top: 40px; flex-direction: column; align-items: center; margin-bottom: 200px;}}
+
+@media (min-width: 670px){#nav-logo2{display: none;}}
+
+@media (max-width: 670px){
+  ::-webkit-scrollbar {display: none;}
+  body{margin: 0px;}
+  center-top{display: flex; justify-content: center; margin-top: -30px; width: 100vw; background: black;}
+
+  #nav-logo{display: none;}  
+  #nav-logo2{width: 120px; margin: 0px;}
+  
+  nav {
+  overflow: auto;
+  overflow-y: hidden;
+  white-space: nowrap;
+  width: 100vw; margin-top: -30px; height: 50px; padding-bottom: 10px; padding-top: 0px;}
+  
+  nav ul {margin-top: 50px;}
+  
+ nav > ul > li >a{ 
+  color: white;
+  display: inline-block;
+  text-align: center;
+  padding: 14px;
+   line-height: 0.2;}}
+
+
+.center-wrap{display: flex;width: 100%; flex-wrap: wrap; justify-content: center; align-items: center; position: absolute; margin-top: 90px; margin-bottom: 90px; padding-bottom: 60px;}
+
+
+a{text-decoration: none;}
+
+
+
+a contact-button{margin-bottom: 50px; z-index: 4; }
+
+@media(max-width: 210px){h2{font-size: 20px;}}
+
+/* ----------- Footer --------------*/
+button-disclosure{z-index: 2; color: white; border-radius: 50px; padding: 14px; padding-top: 4px; padding-bottom: 4px; background: black; font-family: 'roboto'; border: 1px solid white;}
+
+#copyright{font-family: 'roboto'; font-weight:bold; text-align: center; margin-top: 0px; background: black; color: white; padding: 20px; margin-bottom: 0px; color: white;}
+
+footer{background: black; height: 100px; margin-top: -10px; padding-top: 20px; width: 100vw; margin-right: -20px; margin-bottom: 0px; bottom: 0px;}
+
+.center-wrap2{display: flex;width: 100%; flex-wrap: wrap; justify-content: center; align-items: center; position: relative;}
+
+
+contact-button{z-index: 2; color: white; border-radius: 50px; padding: 14px; padding-top: 4px; padding-bottom: 4px; background: black; font-family: 'roboto'; border: 1px solid white; margin-bottom: 40px; transition: all 0.4s; text-align: center;}
+
+contact-button:hover{cursor: pointer; color: black; background: white;}
+  
+</style>
+<script src=""></script>
+<body>
+
+  <center-top><img src="https://cdn.shopify.com/s/files/1/0621/0637/0260/files/Kameda_no_background.png?v=1665267772" id="nav-logo2"> </center-top>
+  <nav>
+    <img src="https://cdn.shopify.com/s/files/1/0621/0637/0260/files/Kameda_no_background.png?v=1665267772" id="nav-logo">
+    <ul>
+
+        <li> <a href="index.html">Home </a></li>
+      <li> <a href="flagshipfund.html"> Flagship Fund </a></li>
+       <li> <a href="portfolios.html"> Portfolios </a></li>
+      <li> <a href="aboutpage.html"> About </a></li>
+      </ul>
+    </nav>
+  
+
+  
+  
+  <section id="section-hero">
+ 
+ <div class="header-wrapper">
+ <h2> Contact Us </h2>
+   <a href="mailto:danny@kametacapital.com"><contact-button> CLICK HERE </contact-button> </a>
+</div>
+    <br> <br>
+   <img src="https://64.media.tumblr.com/484ca0023c776ff12689505683bfb1c7/2fa1af95a8da3dcb-05/s640x960/4c7f40966fb9292c85e93a3decc67231cef01bcc.gifv" id="danny-img">
+ 
+  </section>
+  
+
+  <footer>
+  <div class="center-wrap2">
+ <button-disclosure class="popup" onclick="myFunction()"> DISCLOSURE <span class="popuptext" id="myPopup"> Any opinions in the above are Kameta Capital's views only. None of the above is investment advice, a recommendation or an offer to sell or a solicitation of an offer to buy any securities relating to Kameta Capital. “Kameta Capital,” “we,” “us” and “our” refer to a collective strategy developed by Daniel Kamen, the founder and CEO of Kameta Capital and used in connection with The Flagship Fund. The Kameta Capital Flagship Fund is currently not open to new investors.
+</span> </button-disclosure> </div>
+  
+ 
+<div class="center-wrap2">  <p id="copyright"> COPYRIGHT © 2022 KAMETA CAPITAL. ALL RIGHTS RESERVED. </p></div> </footer>
+  
+  <script>
+// When the user clicks on div, open the popup
+function myFunction() {
+  var popup = document.getElementById("myPopup");
+  popup.classList.toggle("show");
+}
+</script>
+
+</body>
+</html>
