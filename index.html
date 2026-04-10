@@ -6,9 +6,9 @@
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300&display=swap" rel="stylesheet">
   <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap" rel="stylesheet">
   
+<link rel="stylesheet" href="./header.css">
+
 <style>
-
-
 
 body{background: black; background: linear-gradient(black, black, #1A1B1A); margin: 0px; background-repeat: no-repeat; height: 100vh; background-image:("https://i.imgur.com/ATWOnCL.mp4"); overflow-x: hidden;}
 
@@ -24,7 +24,6 @@ body{background: black; background: linear-gradient(black, black, #1A1B1A); marg
   min-height: 100%;
 }
 
-
 /* ----------- Headers --------------*/
 .header-wrapper{padding-left: 10vw; max-width: 800px;}
 
@@ -32,7 +31,6 @@ h1, h2, h3{color: white; font-family: inter; text-shadow: black 1px 0 10px; tran
 h1{font-weight: bold; font-size: 40px; margin-top: -4px; margin-bottom: -4px;}
 h2{color: #618DF2;}
 h3{color: #36FFC2;}
-
 
 /* ----------- Buttons --------------*/
 .button-wrapper{display: flex; justify-content: center; gap: 60px; padding-top: 40px;}
@@ -47,8 +45,6 @@ button:hover{cursor: pointer;}
 #btn-portfolios{}
 #btn-portfolios:hover{background: white; color: black;}
 
-
-
 button-disclosure{z-index: 2; color: white; border-radius: 50px; padding: 14px; padding-top: 4px; padding-bottom: 4px; background: black; font-family: 'roboto'; border: 1px solid white;}
 
 #copyright{font-family: 'roboto'; font-weight:bold; text-align: center; margin-top: 0px; background: black; color: white; padding: 20px; margin-bottom: 0px; color: white;}
@@ -57,39 +53,7 @@ footer{background: black; height: 100px; margin-top: 140px; padding-top: 20px; w
 
 .center-wrap2{display: flex;width: 100%; flex-wrap: wrap; justify-content: center; align-items: center; position: relative;}
 
-
-
 .center-wrap{display: flex; width: 100%; flex-wrap: wrap; justify-content: center; align-items: center; position: absolute; margin-top: 190px; margin-bottom: 90px; padding-bottom: 60px;}
-
-/* ----------- NAV --------------*/
-
-#nav-logo{background: black; width: 140px;}
-
-nav{display: flex;  align-items: center; background: black; margin-top: -30px;}
-
-nav ul {
-  padding: 0;
-  list-style-type: none;
-  flex: 1;
-  display: flex;
-  font-weight: bold; margin-top: 20px;}
-
-nav a{
-  display: block;
-  font-size: 100%;
-  height: 3rem;
-  line-height: 1.7;
-  text-transform: uppercase;
-  text-decoration: none;
-  color: #aaa;}
-
-
-nav li {font-family: 'Inter', sans-serif; margin-left: 40px; margin-top: 30px; user-select:none;}
-
-
-nav li:hover, nav a:hover {
-   color: white; color: #0C8CE4;
-}
 
 /* ----------- Scroll --------------*/
 
@@ -109,7 +73,6 @@ background: black;
 border-radius: 10px;
 background:white;
 }
-
 
 /* ----------- Disclosure popup --------------*/
 
@@ -166,20 +129,15 @@ margin-left: -40vw;
   to {opacity: 1;}
 }
 
-
-
 @keyframes fadeIn {
   from {opacity: 0;}
   to {opacity:1 ;}
 }
 
-
 /* ----------- Screen size --------------*/
 @media(min-width: 1000px){h1{ font-size: 50px;} h2{ font-size: 30px;}h3{ font-size: 30px;}}
 
 @media(max-width: 1000px){#section-hero{padding: 0px;} button{width: 300px; height: 50px; background: #111417; color: white; border: solid white; border-radius: 10px; font-size: 20px;} #video{height: 100vh;}}
-
-
 
 @media(max-width: 1300px){#section-hero{padding: 0px;}}
 @media(max-width: 670px){.button-wrapper{gap: 20px; padding-top: 40px; flex-direction: column; align-items: center; margin-bottom: 200px;} h1{font-size: 30px;}}
@@ -188,48 +146,18 @@ margin-left: -40vw;
 
 @media(max-width: 270px){.button-wrapper{gap: 20px; padding-top: 40px; flex-direction: column; align-items: center; margin-bottom: 200px;} h1{font-size: 19px;} h2{font-size: 16px;} h3{font-size: 15px;} .header-wrapper{padding-left: 4px;} button{width: 220px;}}
 
-
 @media (max-width: 670px){
   ::-webkit-scrollbar {display: none;}
   body{margin: 0px;}
-  #nav-logo{width: 120px; margin: 0px 12px 0 0;}
-  
-  nav {
-  overflow: auto;
-  overflow-y: hidden;
-  white-space: nowrap;
-  width: 100vw; margin-top: -30px; height: 50px; padding-bottom: 10px; padding-top: 0px;}
-  
-  nav ul {margin-top: 50px;}
-  
- nav > ul > li >a{ 
-  color: white;
-  display: inline-block;
-  text-align: center;
-  padding: 14px;
-   line-height: 0.2;}}
-  
-  
-  footer{bottom: 0px;
-    left: 0px;
-    right: 0px;
-    margin-bottom: 0px; margin-bottom: 0px; bottom: 0px; position: fixed;}
-  
+  footer{bottom: 0px; left: 0px; right: 0px; margin-bottom: 0px; position: fixed;}
+}
+
 </style>
-<script src=""></script>
 <body>
 
-  <center-wrap> <nav>
-  <a href="/" aria-label="Kameta Capital Home"><img src="./kameta-logo.png" id="nav-logo" alt="Kameta Capital"></a> 
-    <ul>
-      <li> <a href="./flagshipfund"> Flagship Fund </a></li>
-      <li> <a href="./portfolios"> Portfolios </a></li>
-      <li> <a href="./aboutpage"> About </a></li>
-      <li> <a href="./contactpage"> Contact </a></li>
-      </ul>
-    </nav></center-wrap>
-  
-    <video autoplay muted loop id="video">
+  <div id="site-header"></div>
+
+<video autoplay muted loop id="video">
   <source src="https://i.imgur.com/ATWOnCL.mp4" type="video/mp4">
   Your browser does not support HTML5 video.
 </video>
@@ -266,7 +194,6 @@ function myFunction() {
 }
 </script>
 
-
-
+<script src="./header.js" defer></script>
 </body>
 </html>
