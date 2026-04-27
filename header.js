@@ -22,10 +22,6 @@
   mountNode.innerHTML = `
     <header class="site-header">
       <a class="site-header__brand" href="./index" aria-label="Kameta Capital Home">
-        <span class="site-header__brand-text" aria-hidden="true">
-          <span>Kameta</span>
-          <span>Capital</span>
-        </span>
         <img class="site-header__logo" src="./kameta-logo.png" alt="Kameta Capital">
       </a>
       <div class="site-header__nav" role="navigation" aria-label="Primary">
