@@ -4,7 +4,7 @@
 
   const navItems = [
     { label: 'Flagship Fund', href: './flagshipfund', match: ['/flagshipfund', '/flagshipfund.html'] },
-    { label: 'Portfolios', href: './portfolios', match: ['/portfolios', '/portfolios.html'] },
+    { label: 'Performance', href: './portfolios', match: ['/portfolios', '/portfolios.html'] },
     { label: 'About', href: './aboutpage', match: ['/aboutpage', '/aboutpage.html'] },
     { label: 'Contact', href: './contactpage', match: ['/contactpage', '/contactpage.html'] }
   ];
